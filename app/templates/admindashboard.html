@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Library Management System</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
+      height: 100vh;
+      position: relative;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0,0,0,0.5);
+    }
+    .header-content {
+      z-index: 1;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    .section-title {
+      margin-top: 60px;
+      text-align: center;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      transition: 0.3s;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+    .icon-box {
+      font-size: 40px;
+      color: #0d6efd;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">LibrarySys</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navbarNav" class="collapse navbar-collapse justify-content-end">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Register</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header>
+  <div class="overlay"></div>
+  <div class="header-content">
+    <h1 class="display-4">Admin chair</h1>
+    <p class="lead">Organize, Track, and Manage All Your Library Resources</p>
+    <a href="#" class="btn btn-primary btn-lg mt-3">Get Started</a>
+  </div>
+</header>
+
+<!-- Feature Cards Section -->
+<section class="container mt-5">
+  <h2 class="section-title">Key Features</h2>
+  <div class="row text-center mt-4">
+    <div class="col-md-4 mb-4">
+      <div class="card p-4">
+        <div class="icon-box"><i class="fas fa-book"></i></div>
+        <h5 class="mt-3">Book Catalog</h5>
+        <p>Maintain a digital catalog with categories, authors, and availability.</p>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card p-4">
+        <div class="icon-box"><i class="fas fa-users"></i></div>
+        <h5 class="mt-3">User Management</h5>
+        <p>Manage members, students, and staff with easy registration and login.</p>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card p-4">
+        <div class="icon-box"><i class="fas fa-chart-line"></i></div>
+        <h5 class="mt-3">Reports & Analytics</h5>
+        <p>Visual insights into borrowed books, late returns, and stock status.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Chart Placeholder -->
+<section class="container my-5">
+  <h2 class="section-title">Library Stats (Coming Soon)</h2>
+  <div class="text-center p-5 border rounded bg-light">
+    <p class="lead">Chart visualizations like borrowing trends, book popularity, and more can be added here using Chart.js or D3.js.</p>
+    <i class="fas fa-chart-pie fa-3x text-secondary"></i>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+  <p class="mb-0">© 2025 Library Management System. All Rights Reserved.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
